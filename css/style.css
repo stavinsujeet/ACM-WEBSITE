@@ -7,24 +7,14 @@ body {
     border: none;
     color: black;
   }
-  .acm-text-intro{
-    padding: 180px 15px 10px 15px;
+  .bearers-panel{
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: black;
+    height: 440px;
+    width: 300px
   }
-  @media only screen and (max-width: 600px){
-  .acm-text-intro{
-    padding: 20px 15px 10px 15px;   
-  }
-  .img-fluid{
-    max-width:80%;
-  }
-  .intro{
-    margin:0 -60px 40px 0px;
-  }
-}
-#photos-vaali-gallery{
-  margin: 25px 8vw;
-  margin-right: 5vw;
-}
   .ques-panel{
     border-radius: 25px;
     background-color: white;
@@ -75,4 +65,11 @@ body {
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+.borderless td, tr  {
+border: 0;
+}
+#map{
+  height: 463px;
+  width: 100%;
 }

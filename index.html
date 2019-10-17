@@ -9,11 +9,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
   <link rel="stylesheet" href="./css/style.css">
+  <!-- For Google Maps Api **********************************************************-->
+
+
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGQ3ZlViy7K0B4sJydgQqQc6Dxxm4ksjk&callback=initMap">
+  </script>
+  <script>
+    function initMap() {
+      var uluru = {lat: 30.516088, lng: 76.659460};
+      var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script>
+
+
+
+
+<!-- ******************************************************************************-->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
 <nav class="navbar navbar-expand-md bg-white fixed-top">
   <a class="navbar-brand" href="#">
     <img src="./images/acm_chapter_sym-hires.png"/ height="80" width="80">
@@ -53,7 +71,9 @@
   <div class="media row" style="margin-bottom: 80px">
     <div class="media-body col-lg-6 col-xs-12 col-sm-12">
       <br>
-      <p style="text-align: center;font-size: 2.5rem">WELCOME TO THE MOST DISTINCT <b>CODING CLUB</b> OF <b>CHITKARA UNIVERSITY</b></p>
+      <p style="text-align: center;font-size: 2.5rem">
+        WELCOME TO THE MOST DISTINCT <b>CODING CLUB</b> OF <b>CHITKARA UNIVERSITY</b>
+      </p>
     </div>
     <div class="media-right col-lg-6 col-xs-12 col-sm-12">
       <img src="./images/undraw_coding_6mjf.png" class="media-object img-fluid" width="400px" height="300px" style="max-width:90%; height: auto">
@@ -61,10 +81,10 @@
   </div>
 
 
-    <div class="media row" style="margin-bottom: 80px">
-      <div class="media-left col-lg-6 col-sm-12 col-xs-12">
-        <img src="./images/undraw_team_spirit_hrr4.png" class="media-object img-fluid img-responsive">
-      </div>
+  <div class="media row" style="margin-bottom: 80px">
+    <div class="media-left col-lg-6 col-sm-12 col-xs-12">
+      <img src="./images/undraw_team_spirit_hrr4.png" class="media-object img-fluid img-responsive">
+    </div>
     <div class="media-body col-lg-6 col-sm-12 col-xs-12">
       <h1 style="text-align: center">WHO ARE WE?</h1>
       <p style="font-size: 1.2rem;text-align: center">
@@ -73,155 +93,149 @@
     </div>
   </div>
 
+<!-- Events -->
+
+
   <div id="events">
   	<center>
   		<h1>EVENTS & WORKSHOPS</h1>
   		<p>Come On, We all know events are the best part of college life</p>
-  </center>
-  <div class="row" style="margin-bottom: 80px">
-  	<div class="col-lg-6 col-sm-12 col-xs-12">
-  		<center><h3 class="text-info">UPCOMING EVENTS</h3></center>
-  		<center>
-  			<div class="join-panel panel shadow">
-  				<div class="panel-body">
-  					<img src="./images/559451.png" width="100%">
-  					<h4 class="text-primary">WORKSHOP ON DATA SCIENCES</h4>
-  					<table>
-  						<tr>
-  							<td align="left" rowspan="2"><img src="./images/sm_5b09436fd0515.png" style="height: 50px;width: 50px" /></td>
-  							<td>15 October</td>
-  						</tr>
-  						<tr>
-  							<td>Plato Hall, Square One</td>
-  						</tr>
-  					</table>
-  					<p style="text-align: left;margin-left: 1rem" class="text-muted">
-  						Data Science is a multidisciplinary field that has its root in statics, math and computer science and ishighly in demand. It is widely used in health-care, banking, consultancy services, and e-commerceindustries.
-  					</p>
-  					<button class="btn btn-outline-info">VIEW DETAIL</button>
-  				</div>
-  			</div>
-  		</center>
-  	</div>
-  	<div class="col-lg-6 col-sm-12 col-xs-12"  style="margin-top:40px;">
-  		<h1 class="text-info"><b><b>150+</b></b></h1>
-  		<h1 style="margin-bottom: 3rem"><b><b>Workshops</b></b></h1>
-  		<h1 class="text-info" style="text-align: right;margin-right: 1rem"><b><b>60+</b></b></h1>
-  		<h1 style="text-align: right;margin-right:1rem;margin-bottom: 3rem"><b><b>Hackathons</b></b></h1>
-  		<h1 class="text-info"><b><b>100+</b></b></h1>
-  		<h1><b><b>Expert Talks</b></b></h1>
-  	</div>
-  </div>
-  <center>
-  	<h1>
-  		IF YOU STILL WANT TO KNOW MORE,
-  	</h1>
-  	<h2 style="margin-bottom: 2rem">
-  		CLICK ON THE APPROPRIATE CATEGORY
-  	</h2>
-  </center>
-  <center>
-  	<div class="row" style="margin-bottom: 80px">
-  		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-  			<div class="knowmore-panel panel shadow">
-  				<div class="panel-body">
-  					<center>
-  						<img src="./images/calendar-tick-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
-  						<h3><b>PAST EVENTS</b></h3>
-  					</center>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-  			<div class="knowmore-panel panel shadow">
-  				<div class="panel-body">
-  					<center>
-  						<img src="./images/32-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
-  						<h3><b>CONFERENCES</b></h3>
-  					</center>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-  			<div class="knowmore-panel panel shadow">
-  				<div class="panel-body">
-  					<center>
-  						<img src="./images/1476287791193.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
-  						<h3><b>WORKSHOPS</b></h3>
-  					</center>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-  			<div class="knowmore-panel panel shadow">
-  				<div class="panel-body">
-  					<center>
-  						<img src="./images/233-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
-  						<h3><b>UPCOMING</b></h3>
-  					</center>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </center>
-
-
-
-
-
-
-
-  <h1 style="text-align: center;font-size: 2rem">WE KNOW YOU'VE GOT SOME QUESTIONS...?</h1>
-  <br>
-  <div class="row">
+    </center>
+    <div class="row" style="margin-bottom: 80px">
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+  		  <center>
+          <h3 class="text-info">UPCOMING EVENTS</h3>
+        </center>
+  		  <center>
+          <div class="join-panel panel shadow">
+  				  <div class="panel-body">
+              <img src="./images/559451.png" width="100%">
+  				    <h4 class="text-primary">WORKSHOP ON DATA SCIENCES</h4>
+  				    <table>
+  						  <tr>
+  				        <td align="left" rowspan="2"><img src="./images/sm_5b09436fd0515.png" style="height: 50px;width: 50px" /></td>
+                  <td>15 October</td>
+  						  </tr>
+  						  <tr>
+  							  <td>Plato Hall, Square One</td>
+  						  </tr>
+  				      </table>
+                <p style="text-align: left;margin-left: 1rem" class="text-muted">
+  						  Data Science is a multidisciplinary field that has its root in statics, math and computer science and ishighly in   demand. It is widely used in health-care, banking, consultancy services, and e-commerceindustries.
+                </p>
+  			        <button class="btn btn-outline-info">VIEW DETAIL</button>
+  				  </div>
+  		    </div>
+  		  </center>
+      </div>
+      <div class="col-lg-6 col-sm-12 col-xs-12"  style="margin-top:40px;">
+      	<h1 class="text-info"><b><b>150+</b></b></h1>
+      	<h1 style="margin-bottom: 3rem"><b><b>Workshops</b></b></h1>
+      	<h1 class="text-info" style="text-align: right;margin-right: 1rem"><b><b>60+</b></b></h1>
+      	<h1 style="text-align: right;margin-right:1rem;margin-bottom: 3rem"><b><b>Hackathons</b></b></h1>
+      	<h1 class="text-info"><b><b>100+</b></b></h1>
+      	<h1><b><b>Expert Talks</b></b></h1>
+      </div>
+    </div>
+    <center>
+      <h1>
+      	IF YOU STILL WANT TO KNOW MORE,
+      </h1>
+      <h2 style="margin-bottom: 2rem">
+      	CLICK ON THE APPROPRIATE CATEGORY
+      </h2>
+    </center>
+    <center>
+      <div class="row" style="margin-bottom: 80px">
+      	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      		<div class="knowmore-panel panel shadow">
+      			<div class="panel-body">
+      				<center>
+      					<img src="./images/calendar-tick-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
+      					<h3><b>PAST EVENTS</b></h3>
+      				</center>
+      			</div>
+      		</div>
+      	</div>
+      	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      		<div class="knowmore-panel panel shadow">
+      			<div class="panel-body">
+      				<center>
+      					<img src="./images/32-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
+      					<h3><b>CONFERENCES</b></h3>
+      				</center>
+      			</div>
+      		</div>
+      	</div>
+      	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      		<div class="knowmore-panel panel shadow">
+      			<div class="panel-body">
+      				<center>
+      					<img src="./images/1476287791193.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
+      					<h3><b>WORKSHOPS</b></h3>
+      				</center>
+      			</div>
+      		</div>
+      	</div>
+      	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      		<div class="knowmore-panel panel shadow">
+      			<div class="panel-body">
+      				<center>
+      					<img src="./images/233-512.png" style="height: 8rem;width: 8rem;margin-top: 1rem">
+      					<h3><b>UPCOMING</b></h3>
+      				</center>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+    </center>
+    <h1 style="text-align: center;font-size: 2rem">WE KNOW YOU'VE GOT SOME QUESTIONS...?</h1><br>
+    <div class="row">
       <div class="col-lg-6 col-sm-12 col-xs-12" style="margin-bottom: 80px;">
-        <center><div class="ques-panel panel shadow" align="right">
+        <center>
+          <div class="ques-panel panel shadow" align="right">
             <div class="panel-body">
               <img src="./images/undraw_goals_w8tw.png" width="100%">
               <h1 style="font-size: 1.5rem;text-align: center">WHAT WE DO AT ACM?</h1>
               <div class="container">
-                <p style="font-size: 1rem;text-align: start">We organize technical as well as 
+                <p style="font-size: 1rem;text-align: start">
+                  We organize technical as well as 
                   fun events for the students of 
                   Chitkara University.<br>
                   We also organize workshops in 
                   which students can participate 
                   and work on latest technologies 
-                  apart from their studies.</p>
-                </div>
-            </div>
-      </div></center>
-      </div> 
-
-      <div class="col-lg-6 col-sm-12 col-xs-12" style="margin-bottom: 80px;">
-          <center><div class="ques-panel panel shadow" align="right" >
-              <div class="panel-body">
-                  <img src="./images/undraw_circles_y7s2.png" width="100%"/>
-                  <h1 style="font-size: 1.5rem;text-align: center">HOW TO JOIN ACM?</h1>
-                  <div class="container">
-                    <p style="font-size: 1rem;text-align: start">We conduct interviews 
-                      for students of Chitkara University. 
-                      The students who clear the 
-                      interview will be registered at 
-                      ACM India.<br>
-                      Then the student will be the 
-                      official member of ACM Chapter. 
-                    </p>
-                  </div>  
+                  apart from their studies.
+                </p>
               </div>
-        </div>
-    </center></div>
+            </div>
+          </div>
+        </center>
+      </div> 
+      <div class="col-lg-6 col-sm-12 col-xs-12" style="margin-bottom: 80px;">
+        <center>
+          <div class="ques-panel panel shadow" align="right" >
+            <div class="panel-body">
+              <img src="./images/undraw_circles_y7s2.png" width="100%"/>
+              <h1 style="font-size: 1.5rem;text-align: center">HOW TO JOIN ACM?</h1>
+              <div class="container">
+                <p style="font-size: 1rem;text-align: start">\
+                  We conduct interviews 
+                  for students of Chitkara University. 
+                  The students who clear the 
+                  interview will be registered at 
+                  ACM India.<br>
+                  Then the student will be the 
+                  official member of ACM Chapter. 
+                </p>
+              </div>  
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
+</div>
 <!--
 	<h1 style="text-align: center;font-size: 2rem">WE KNOW YOU'VE GOT SOME QUESTIONS...?</h1>
 	<br>
@@ -272,24 +286,228 @@
 </div>
 </div>
 -->
+
+<!-- Office Bearers-->
 <div class="bg-info" style="width: 100%">
 	<center>
-		<h1 style="color: white;">OFFICE BEARERS</h1>
-		<h3 style="color: white;margin-bottom: 40px">Meet the persons behind the scenes, who make it all happen.</h3>
+		<h1 style="color: white;"><br>OFFICE BEARERS</h1>
+		<h3 style="color: white;margin-bottom: 60px">Meet the persons behind the scenes, who make it all happen.</h3>
 	</center>
 	<center>
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3">
-				<div class="bearers-panel panel">
-					<div class="panel-body">
-						<img src="./images/images.png">
-						<div><b>ANIKET</b></div>
-						<div>PRESIDENT</div>
-					</div>
-				</div>
+			<div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+				  <div class="bearers-panel panel">
+				  	<div class="panel-body">
+				  		<img src="./images/images.png" style="margin-top: 1rem">
+				  		<div style="margin-top: 1rem"><b>ANIKET</b></div>
+				  		<div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+				  	</div>
+				  </div>
+        </center>
 			</div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3"  style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
 		</div>
 	</center>
+  <center>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3"  style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-mg-4 col-lg-3" style="margin-bottom: 80px">
+        <center>
+          <div class="bearers-panel panel">
+            <div class="panel-body">
+              <img src="./images/images.png" style="margin-top: 1rem">
+              <div style="margin-top: 1rem"><b>ANIKET</b></div>
+              <div>PRESIDENT</div>
+              <div>
+                <span><img src="./images/Path 548.png" style="height: 2rem;width: 2rem"></span>
+                <span><img src="./images/Popular_Social_Media-22-512.png" style="height: 4rem;width: 4rem"></span>
+                <span><img src="./images/Path 549.png" style="height: 2rem;width: 2rem"></span>
+              </div>
+              <p>+91-1234567890</p>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </center>
+</div>
+
+
+<!-- Contact Us-->
+
+
+<div class="container-fluid" style="margin-top: 80px;margin-bottom: 80px">
+  <center>
+    <h1>CONTACT US</h1>
+    <p style="margin-bottom: 40px">Got a question or any query? Feel free to reach us!</p>
+  </center>
+  <div class="row">
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-6">
+      <div id="map">
+        
+      </div>
+<!--
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.175134961477!2d76.65758911512631!3d30.516086481713128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara+University!5e0!3m2!1sen!2sin!4v1535843077790" width="100%" height="200%" frameborder="0" style="border:0" allowfullscreen></iframe>
+-->
+    </div>
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-6">
+      <form>
+        <table class="table borderless">
+          <tr>
+            <td>
+              <input type="text" name="firstname" placeholder="First name" class="form-control">
+            </td>
+            <td>
+              <input type="text" name="lastname" placeholder="Last name" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="text" name="subject" placeholder="Subject" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="email" name="email" placeholder="Email" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea class="form-control" rows="8" id="comment" placeholder="Write your message here."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" class="btn btn-primary">&emsp;SEND MESSAGE&emsp;</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+<div section="footer" class="bg-info" style="border-top-left-radius: 10px;border-top-right-radius: 10px;color: white">
+  <center>
+    <p>
+      <br>
+      Copyright © 2019 ACM CHAPTER. All Rights Reserved.<br>
+      Site Designed By KASHISH DHAWAN (Web Team)
+      <br><br>
+    </p>
+  </center>
 </div>
 </body>
 </html>
