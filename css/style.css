@@ -7,6 +7,24 @@ body {
     border: none;
     color: black;
   }
+  .acm-text-intro{
+    padding: 180px 15px 10px 15px;
+  }
+  @media only screen and (max-width: 600px){
+  .acm-text-intro{
+    padding: 20px 15px 10px 15px;   
+  }
+  .img-fluid{
+    max-width:80%;
+  }
+  .intro{
+    margin:0 -60px 40px 0px;
+  }
+}
+#photos-vaali-gallery{
+  margin: 25px 8vw;
+  margin-right: 5vw;
+}
   .ques-panel{
     border-radius: 25px;
     background-color: white;
